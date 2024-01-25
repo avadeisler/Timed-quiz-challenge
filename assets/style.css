@@ -1,0 +1,43 @@
+* {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+}
+
+.timer{
+    color:blueviolet;
+    font-size: 50px;
+}
+
+.quiz {
+    margin: 50px auto 0 auto;
+    max-width: 500px;
+}
+
+h1 {
+    color: rgb(60, 4, 165);
+    font-size: 60px;
+}
+
+.container { 
+    border: 5px solid; 
+    border-color:blueviolet;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    height: 580px; 
+    width: 50%; 
+    transform: translate(-50%, -50%); 
+    padding: 10px; 
+} 
+
+#quiz-info {
+    font-size: 20px;
+    color:blueviolet; 
+}
+
+button {
+    color:rgb(0, 217, 255);
+    background-color: blue;
+    font-size: 30px;
+}

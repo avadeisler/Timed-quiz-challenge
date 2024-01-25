@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <title>Timed Coding Quiz</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="timer"> 
+                <p> 
+                    Time: 
+                    <span id="timer"> 
+                        0 
+                    </span> 
+                </p> 
+            </div> 
+        </header>
+
+        <main class="quiz"> 
+            <div id="quiz-info"> 
+                <h1>CODING QUIZ!</h1>
+                <p>Try to answer the following coding questions within the time limit! If you guess incorrectly, you will lose time from your clock. Either get all the answers right or run out of time but once the timer reaches 0, game over, man!</p>
+                <button id = "start">Start Quiz!</button>
+            </div>
+        
+            <div class="hide" id="questions"> 
+                <h2 id="question-words"></h2> 
+                <div class="options" id="options"> 
+                </div> 
+            </div> 
+
+            <div class="hide" id="quiz-end"> 
+                <h2>All Done!</h2> 
+                <p>Your final score is: 
+                    <span id="score-final"> 
+                    </span> 
+                </p> 
+                <p> 
+                    Please enter your name: 
+                        <input type="text" 
+                            id="name" 
+                            max="5" /> 
+                        <button id="submit-score"> Submit </button> 
+                </p> 
+            </div> 
+        </main>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
