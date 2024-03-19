@@ -1,43 +1,119 @@
+/* Style.css */
+
 * {
-    font-family:'Courier New', Courier, monospace;
-    font-weight: bold;
-    text-align: center;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
 }
 
-.timer{
-    color:blueviolet;
-    font-size: 50px;
-}
-
-.quiz {
-    margin: 50px auto 0 auto;
-    max-width: 500px;
+.quiz,
+.scores {
+	margin: 50px auto 0 auto;
+	max-width: 400px;
 }
 
 h1 {
-    color: rgb(60, 4, 165);
-    font-size: 60px;
+    font-size:xx-large;
+    color: #8b18dd;
+}
+.containerNew {
+	border: 5px solid;
+    border-color: #8b18dd;
+    border-style: double;
+    border-inline-color: #50e0d4;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 700px;
+	width: 60%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
 }
 
-.container { 
-    border: 5px solid; 
-    border-color:blueviolet;
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    height: 580px; 
-    width: 50%; 
-    transform: translate(-50%, -50%); 
-    padding: 10px; 
-} 
+p {
+	margin: 15px 15px;
+    color: rgb(8, 127, 163);
+}
 
-#quiz-info {
-    font-size: 20px;
-    color:blueviolet; 
+.landing {
+	text-align: center;
+}
+
+.scoresHeader {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+
+.timer {
+	position: absolute;
+	top: 15px;
+	right: 15px;
 }
 
 button {
-    color:rgb(0, 217, 255);
-    background-color: blue;
-    font-size: 30px;
+	display: inline-block;
+	margin: 10px;
+	cursor: pointer;
+	color: #50e0d4;
+	background-color: #a373da;
+	border-radius: 10px;
+	border: 0;
+	padding: 20px;
+}
+
+button:hover {
+	background-color: #41128d;
+}
+
+.options button {
+	display: block;
+}
+
+input[type="text"] {
+	font-size: 100%;
+}
+
+.hide {
+	display: none;
+}
+
+.feedback {
+	font-style: bold;
+	font-size: 120%;
+	margin-top: 20px;
+	padding-top: 15px;
+	color: #fff;
+	border-top: 2px solid #4B0082;
+}
+
+ol {
+	padding-left: 15px;
+	max-height: 600px;
+	overflow: auto;
+}
+
+li {
+	padding: 5px;
+	list-style: decimal inside none;
+}
+
+li:nth-child(odd) {
+	background-color: #dfdae7;
+}
+
+@media screen and (max-width: 768px) {
+	.containerNew {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.containerNew {
+		width: 90%;
+	}
+
+	.quiz,
+	.scores {
+		max-width: 90%;
+	}
 }
