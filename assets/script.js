@@ -1,17 +1,15 @@
-// script.js
+// The quiz's questions and answers, js.script
 
 let questions = [
 	{
-		prompt: `Inside which HTML 
-				element do we put 
-				the JavaScript?`,
+		prompt: `Which are Javascript data types?`,
         choices: [
-			"<javascript>",
-			"<js>",
-			"<script>",
-			"<scripting>",
+			"boolean, objects, strings",
+			"troolean, arrays, strings",
+			"strings, figures, noodles",
+			"objects, functions, lists",
 		],
-		answer: "<script>",
+		answer: "boolean, objects, strings",
 	},
 
 	{
@@ -31,38 +29,29 @@ let questions = [
 		prompt: `How does a for loop
 				start?`,
         choices: [
+			"for (i = 0; i <= 5; ii",
+			"for (i = 0 == i <= 5)",
 			"for (i = 0; i <= 5; i++)",
-			"for (i = 0; i <= 5)",
-			"for i = 1 to 5",
-			" for (i <= 5; i++)",
+			"for (i <= 5; i++)",
 		],
 		answer: "for (i = 0; i <= 5; i++)",
 	},
 
 	{
-		prompt: `In JavaScript, which 
-				of the following is 
-				a logical operator?`,
-        choices: ["|", "&&", "%", "/"],
+		prompt: `Which of the following is 
+				a logical operator in JavaScript?`,
+        choices: ["=", "&&", "%", "+"],
 		answer: "&&",
 	},
 
 	{
-		prompt: `A named element in a 
-				JavaScript program that
-				is used to store and 
-				retrieve data is a _____.`,
-        choices: [
-			"method",
-			"assignment operator",
-			"letiable",
-			"string",
-		],
-		answer: "letiable",
+		prompt: `What is the outcome of 4+2+"8"?`,
+        choices: ["14","68","22","428"],
+		answer: "68",
 	},
 ];
 
-// Get Dom Elements
+// Dom Elements
 
 let questionsEl =
 	document.querySelector(
@@ -85,13 +74,12 @@ let feedbackEl = document.querySelector(
 let reStartBtn =
 	document.querySelector("#restart");
 
-// Quiz's initial state
+// starting point
 let currentQuestionIndex = 0;
 let time = questions.length * 15;
 let timerId;
 
-// Start quiz and hide frontpage
-
+// Start quiz and hide head page
 function quizStart() {
 	timerId = setInterval(
 		clockTick,
@@ -112,8 +100,7 @@ function quizStart() {
 	getQuestion();
 }
 
-// Loop through array of questions and
-// Answers and create list with buttons
+// Loop through array of questions and answers, and create list with buttons
 function getQuestion() {
 	let currentQuestion =
 		questions[currentQuestionIndex];
@@ -145,8 +132,7 @@ function getQuestion() {
 	);
 }
 
-// Check for right answers and deduct
-// Time for wrong answer, go to next question
+// Check for right answer if right or wrong, go to next question
 
 function questionClick() {
 	if (
@@ -189,8 +175,7 @@ function questionClick() {
 	}
 }
 
-// End quiz by hiding questions,
-// Stop timer and show final score
+// End quiz, stop timer and show final score
 
 function quizEnd() {
 	clearInterval(timerId);
@@ -212,7 +197,7 @@ function quizEnd() {
 	);
 }
 
-// End quiz if timer reaches 0
+// End quiz if run out of time
 
 function clockTick() {
 	time--;
@@ -222,8 +207,7 @@ function clockTick() {
 	}
 }
 
-// Save score in local storage
-// Along with users' name
+// Save score and user name in local storage
 
 function saveHighscore() {
 	let name = nameEl.value.trim();
@@ -261,10 +245,10 @@ function checkForEnter(event) {
 }
 nameEl.onkeyup = checkForEnter;
 
-// Save users' score after clicking submit
+// Save users' score when you click submit
 
 submitBtn.onclick = saveHighscore;
 
-// Start quiz after clicking start quiz
+// Start quiz when you click start quiz
 
 startBtn.onclick = quizStart;

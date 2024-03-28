@@ -5,7 +5,7 @@ deployed link: https://avadeisler.github.io/Timed-quiz-challenge/
 
 For this challenge, I am to create a timed quiz.
 
-Acceptance criteria:
+This is the Acceptance criteria for this challenge:
 
 GIVEN I am taking a code quiz
 
@@ -30,4 +30,4 @@ WHEN the game is over
 
 THEN I can save my initials and my score
 
-note: I am sorry, I did not get a chnace to finish this one completely but am submitting so I don't miss the deadline. I intend to resubmit this challenge.
+I had started this project initially before it was due. After being away from it for so long, I was a little lost on what I had left to do so I pretty much started over. The thing I am having a hard time with is getting the highscores to show up in list form on the highscores page. I'm not sure what I'm doing wrong there. Other than that, this project was relatively straight forward but time consuming. Trying to figure out the timer intitially gave me some issues.

@@ -1,5 +1,3 @@
-<!--index.html-->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +6,7 @@
 	<meta name="viewport"
 		content="width=device-width,
 				initial-scale=1.0" />
+		<!-- Link css style sheet here -->
 	<link rel="stylesheet"
 		href="assets/style.css" />
 	<title>Timed Coding Quiz</title>
@@ -17,6 +16,7 @@
 	<div class="containerNew">
 		<header>
 			<div>
+				<!-- button to view highscores and linked it to the highscroes html -->
 				<a href="./highscore.html">
 					<button class="scores-header"
 							id="view-high-scores">
@@ -24,7 +24,7 @@
 					</button>
 				</a>
 			</div>
-
+			<!-- timer for the quiz -->
 			<div class="timer">
 				<p>
 					Time:
@@ -47,12 +47,13 @@
                         to answer 5 coding questions! Each wrong answer
                         will cost you 10 seconds so watch out!
 					</p>
+					<!-- Button to start the quiz -->
 					<button id="start">
 						Start Quiz
 					</button>
 				</div>
 			</div>
-
+			<!-- questions and answers section. Hide until answered. -->
 			<div class="hide" id="questions">
 				<h2 id="question-text"></h2>
 				<div class="choices" id="choices">
@@ -81,6 +82,7 @@
 			</div>
 		</main>
 	</div>
+	<!-- Link JS here -->
 	<script src="assets/script.js"></script>
 </body>
 

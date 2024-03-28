@@ -6,6 +6,7 @@ let scoresBtn = document.querySelector(
 
 // Rank previous scores in order by
 // Retrieving scores from localStorage
+// this SHOULD be working but it's not. :(
 
 function printHighscores() {
 	let highscores =
@@ -26,7 +27,7 @@ function printHighscores() {
 			);
 		liTag.textContent =
 			score.name +
-			" - " +
+			" " +
 			score.score;
 		let olEl =
 			document.getElementById(

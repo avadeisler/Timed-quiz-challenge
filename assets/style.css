@@ -1,11 +1,15 @@
-/* Style.css */
+/* css for quiz. * applies to everything */
 
 * {
 	font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: large;
 }
 
-.quiz,
+.quiz {
+	margin: 50px auto 0 auto;
+	max-width: 400px;
+}
+
 .scores {
 	margin: 50px auto 0 auto;
 	max-width: 400px;
@@ -15,6 +19,10 @@ h1 {
     font-size:xx-large;
     color: #8b18dd;
 }
+ 
+/* went with a fun blue and purple theme throughout
+ and did a fancy little border */
+
 .containerNew {
 	border: 5px solid;
     border-color: #8b18dd;
@@ -29,10 +37,29 @@ h1 {
 	padding: 10px;
 }
 
+/* the css for all the buttons */
+
+button {
+	display: inline-block;
+	margin: 10px;
+	cursor: pointer;
+	color: #50e0d4;
+	background-color: #a373da;
+	border-radius: 10px;
+	border: 0;
+	padding: 20px;
+}
+
+button:hover {
+	background-color: #41128d;
+}
+
 p {
 	margin: 15px 15px;
     color: rgb(8, 127, 163);
 }
+ 
+/* the initial page */
 
 .landing {
 	text-align: center;
@@ -48,21 +75,6 @@ p {
 	position: absolute;
 	top: 15px;
 	right: 15px;
-}
-
-button {
-	display: inline-block;
-	margin: 10px;
-	cursor: pointer;
-	color: #50e0d4;
-	background-color: #a373da;
-	border-radius: 10px;
-	border: 0;
-	padding: 20px;
-}
-
-button:hover {
-	background-color: #41128d;
 }
 
 .options button {
@@ -93,8 +105,9 @@ ol {
 }
 
 li {
-	padding: 5px;
-	list-style: decimal inside none;
+	padding: 10px;
+	list-style: decimal;
+	color: blue;
 }
 
 li:nth-child(odd) {
